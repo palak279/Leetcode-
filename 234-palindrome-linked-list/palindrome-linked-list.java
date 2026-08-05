@@ -18,7 +18,7 @@ class Solution {
         int i = 0;
         int j = list.size()-1;
         while(i<j){
-            if(!list.get(i).equals(list.get(j))){
+            if(list.get(i).intValue() != list.get(j).intValue()){
                 return false;
             }
             i++;
