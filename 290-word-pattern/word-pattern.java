@@ -17,7 +17,7 @@ class Solution {
                 map1.put(arr[i], words[i]);
             }
             if(map2.containsKey(words[i])){
-                if(!map2.get(words[i]).equals(arr[i])){
+                if(map2.get(words[i]) != arr[i]){
                     return false;
                 }
             }
